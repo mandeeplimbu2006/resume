@@ -1,0 +1,21 @@
+/* Mobile styles (for small screens, up to 600px wide) */
+@media only screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  /* Tablet styles (for screens between 600px and 900px) */
+  @media only screen and (min-width: 600px) and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Desktop styles (for screens larger than 900px) */
+  @media only screen and (min-width: 900px) {
+    .column {
+      width: 33.33%;
+    }
+  }
