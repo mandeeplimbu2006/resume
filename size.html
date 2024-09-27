@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Website</title>
+  <style>
+    /* Base styles */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .header, .content, .footer {
+      padding: 20px;
+      text-align: center;
+    }
+
+    /* Fluid layout using percentage-based width */
+    .column {
+      float: left;
+      width: 33.33%;
+      padding: 15px;
+    }
+
+    /* Clear floats after columns */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+      .column {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    @media only screen and (min-width: 600px) and (max-width: 900px) {
+      .column {
+        width: 50%;
+      }
+    }
+
+    @media only screen and (min-width: 900px) {
+      .column {
+        width: 33.33%;
+      }
+    }
+
+    /* Responsive images */
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Responsive Website</h1>
+    </div>
+
+    <div class="row">
+      <div class="column" style="background-color:#aaa;">
+        <h2>Column 1</h2>
+        <p>Content</p>
+      </div>
+      <div class="column" style="background-color:#bbb;">
+        <h2>Column 2</h2>
+        <p>Content</p>
+      </div>
+      <div class="column" style="background-color:#ccc;">
+        <h2>Column 3</h2>
+        <p>Content</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  </div>
+
+</body>
+</html>
