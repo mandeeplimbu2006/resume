@@ -1,0 +1,30 @@
+/* Base styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header, .content, .footer {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Fluid layout using percentage-based width */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+  }
+  
+  /* Clear floats after columns */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
